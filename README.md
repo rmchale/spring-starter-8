@@ -1,6 +1,10 @@
 ## spring-starter
-I created this using spring [intitializr](https://start.spring.io/#!type=gradle-project&language=groovy&platformVersion=2.3.5.RELEASE&packaging=jar&jvmVersion=11&groupId=com.hibby&artifactId=beginner-spring-boot&name=beginner-spring-boot&description=Demo%20project%20for%20Spring%20Boot&packageName=com.hibby.beginner-spring-boot) 
 
+### prerequisite
+This uses java 8
+
+### setup
+I created this using spring [intitializr](https://start.spring.io/#!type=gradle-project&language=groovy&platformVersion=2.3.5.RELEASE&packaging=jar&jvmVersion=11&groupId=com.hibby&artifactId=beginner-spring-boot&name=beginner-spring-boot&description=Demo%20project%20for%20Spring%20Boot&packageName=com.hibby.beginner-spring-boot) 
 ## build
 ```
 ./gradlew build
