@@ -14,9 +14,11 @@ class BeanDefinitions {
         return new MyBean();
     }
 }
+```
+
 ### ClassInjection Bean Definition
 
-```
+
 [ClassInjection](https://github.com/rmchale/spring-starter-8/blob/main/src/main/groovy/com/hibby/beginnerspringboot/bean/ClassInjection.groovy) is the definition of a spring-bean defined with the @Component annotation.
 
 ```
