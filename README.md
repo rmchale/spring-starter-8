@@ -1,5 +1,19 @@
 ## spring-starter
 
+This is examples of di using the spring framework.
+
+
+### MyBean Definition
+```
+@Configuration
+class BeanDefinitions {
+    @Bean /* definition for MyBean class */
+    MyBean bean() {
+        return new MyBean();
+    }
+}
+```
+
 ### prerequisite
 This uses java 8 which I installed via [sdkman](https://sdkman.io/install):
 ```
