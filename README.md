@@ -2,6 +2,17 @@
 
 This is examples of di using the spring framework.
 
+### prerequisite
+This uses java 8 which I installed via [sdkman](https://sdkman.io/install):
+```
+ sdk install java 8.0.272-zulu
+```
+
+### setup
+I created this using spring [intitializr](https://start.spring.io/#!type=gradle-project&language=groovy&platformVersion=2.3.5.RELEASE&packaging=jar&jvmVersion=11&groupId=com.hibby&artifactId=beginner-spring-boot&name=beginner-spring-boot&description=Demo%20project%20for%20Spring%20Boot&packageName=com.hibby.beginner-spring-boot) 
+
+
+## tutorial
 
 ### MyBean Bean Definition
 [This](https://github.com/rmchale/spring-starter-8/blob/main/src/main/groovy/com/hibby/beginnerspringboot/bean/BeanDefinitions.groovy) method is a definition for a spring-bean defined with the @bean annotation.
@@ -48,14 +59,6 @@ class LoggingController {
 ```
 
 
-### prerequisite
-This uses java 8 which I installed via [sdkman](https://sdkman.io/install):
-```
- sdk install java 8.0.272-zulu
-```
-
-### setup
-I created this using spring [intitializr](https://start.spring.io/#!type=gradle-project&language=groovy&platformVersion=2.3.5.RELEASE&packaging=jar&jvmVersion=11&groupId=com.hibby&artifactId=beginner-spring-boot&name=beginner-spring-boot&description=Demo%20project%20for%20Spring%20Boot&packageName=com.hibby.beginner-spring-boot) 
 ## build
 ```
 ./gradlew build
