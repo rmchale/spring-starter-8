@@ -1,9 +1,7 @@
 ## spring-starter
 
 ### prerequisite
-This uses java 8
-
-I installed via [sdkman](https://sdkman.io/install):
+This uses java 8 which I installed via [sdkman](https://sdkman.io/install):
 ```
  sdk install java 8.0.272-zulu
 ```
