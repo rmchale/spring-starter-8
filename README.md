@@ -3,6 +3,11 @@
 ### prerequisite
 This uses java 8
 
+I installed via [sdkman](https://sdkman.io/install):
+```
+ sdk install java 8.0.272-zulu
+```
+
 ### setup
 I created this using spring [intitializr](https://start.spring.io/#!type=gradle-project&language=groovy&platformVersion=2.3.5.RELEASE&packaging=jar&jvmVersion=11&groupId=com.hibby&artifactId=beginner-spring-boot&name=beginner-spring-boot&description=Demo%20project%20for%20Spring%20Boot&packageName=com.hibby.beginner-spring-boot) 
 ## build
