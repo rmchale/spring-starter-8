@@ -3,7 +3,9 @@
 This is examples of di using the spring framework.
 
 
-### MyBean Definition
+### MyBean Bean Definition
+[This](https://github.com/rmchale/spring-starter-8/blob/main/src/main/groovy/com/hibby/beginnerspringboot/bean/BeanDefinitions.groovy) method is a definition for a spring-bean defined with the @bean annotation.
+
 ```
 @Configuration
 class BeanDefinitions {
@@ -12,7 +14,37 @@ class BeanDefinitions {
         return new MyBean();
     }
 }
+### ClassInjection Bean Definition
+
 ```
+[ClassInjection](https://github.com/rmchale/spring-starter-8/blob/main/src/main/groovy/com/hibby/beginnerspringboot/bean/ClassInjection.groovy) is the definition of a spring-bean defined with the @Component annotation.
+
+```
+@Component /* this makes this eligible for spring DI */
+class ClassInjection {
+
+    String run() {
+        return "hi"
+    }
+}
+```
+
+### Autowiring
+[LoggingController](https://github.com/rmchale/spring-starter-8/blob/main/src/main/groovy/com/hibby/beginnerspringboot/controller/LoggingController.groovy) is an example of autowiring those beans
+```
+class LoggingController {
+
+    @Autowired ClassInjection injected;
+    @Autowired MyBean myBean
+
+    @RequestMapping("/")
+    public String index() {
+        log.info("my code {} {}", injected.run(), myBean.run())
+        return "Howdy! Check out the Logs to see the output...";
+    }
+}
+```
+
 
 ### prerequisite
 This uses java 8 which I installed via [sdkman](https://sdkman.io/install):
